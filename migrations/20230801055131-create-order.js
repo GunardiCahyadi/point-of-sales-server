@@ -10,10 +10,11 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       orderNo: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
       },
       grandTotal: {
         type: Sequelize.INTEGER,
+        defaultValue: 0,
       },
       status: {
         type: Sequelize.STRING,

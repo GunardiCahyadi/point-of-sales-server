@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   Order.init(
     {
       orderNo: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
         validate: {
           notNull: {
@@ -30,6 +30,7 @@ module.exports = (sequelize, DataTypes) => {
       grandTotal: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        defaultValue: 0,
         validate: {
           notNull: {
             msg: "grandTotal is required",
