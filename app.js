@@ -11,6 +11,9 @@ app.use(cors());
 
 app.use(express.static("public"));
 
+app.get("/products", Controller.listProduct);
+// app.post("/tables", Controller.addTable);
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
