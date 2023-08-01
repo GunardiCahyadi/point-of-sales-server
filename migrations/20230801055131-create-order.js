@@ -17,6 +17,7 @@ module.exports = {
       },
       status: {
         type: Sequelize.STRING,
+        defaultValue: "Uncompleted",
       },
       TableId: {
         type: Sequelize.INTEGER,
