@@ -8,11 +8,17 @@ const cors = require("cors");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
+require("dotenv").config();
 
 app.use(express.static("public"));
 
 app.get("/products", Controller.listProduct);
-// app.post("/tables", Controller.addTable);
+
+app.post("/orders/:tableId", Controller.handleOrder); //
+
+app.post("/orderdetails/:productId", Controller.handleOrderDetails);
+
+app.post("/generate-midtrans-token/:productId", Controller.midtrans);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
