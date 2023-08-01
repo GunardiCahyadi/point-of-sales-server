@@ -1,0 +1,86 @@
+[
+    {
+        "productName": "King Box Cheeseburger",
+        "price": 50000,
+        "imageUrl": "http://localhost:3000/product1.jpg",
+        "description": "The iconic flame-grilled beef burger with tomatoes, lettuce, onions, and pickles."
+    },
+    {
+        "productName": "King Box Double Cheeseburger Regular",
+        "price": 60000,
+        "imageUrl": "http://localhost:3000/product2.jpg",
+        "description": "A juicy chicken fillet served on a soft bun with mayo and lettuce."
+    },
+    {
+        "productName": "King Box Mozzarella Cheeseburger Regular",
+        "price": 61000,
+        "imageUrl": "http://localhost:3000/product3.jpg",
+        "description": "A classic cheeseburger with a melted cheese slice, onions, and pickles."
+    },
+    {
+        "productName": "King Deals Box Cheeseburger Supreme Regular",
+        "price": 56000,
+        "imageUrl": "http://localhost:3000/product4.jpg",
+        "description": "Golden crispy fries, perfect as a side or snack."
+    },
+    {
+        "productName": "King Box Royal Chicken Regular",
+        "price": 56000,
+        "imageUrl": "http://localhost:3000/product5.jpg",
+        "description": "Crispy and flavorful onion rings."
+    },
+    {
+        "productName": "Paket Cheeseburger Regular",
+        "price": 39000,
+        "imageUrl": "http://localhost:3000/product6.jpg",
+        "description": "A delicious plant-based burger patty with fresh vegetables."
+    },
+    {
+        "productName": "Paket Double Cheeseburger Regular",
+        "price": 49000,
+        "imageUrl": "http://localhost:3000/product7.jpg",
+        "description": "A massive burger with BBQ sauce, bacon, and cheese."
+    },
+    {
+        "productName": "Paket Mozzarella Cheeseburger Regular",
+        "price": 50000,
+        "imageUrl": "http://localhost:3000/product8.jpg",
+        "description": "Four crispy and tender chicken strips with your choice of dipping sauce."
+    },
+    {
+        "productName": "Paket Cheeseburger Supreme Regular",
+        "price": 45000,
+        "imageUrl": "http://localhost:3000/product9.jpg",
+        "description": "A savory fish fillet topped with tartar sauce and lettuce."
+    },
+    {
+        "productName": "Paket Chicken Royal Burger Regular",
+        "price": 45000,
+        "imageUrl": "http://localhost:3000/product10.jpg",
+        "description": "A Whopper topped with crispy bacon and melted cheese."
+    },
+    {
+        "productName": "Double Cheeseburger",
+        "price": 35000,
+        "imageUrl": "http://localhost:3000/product11.jpg",
+        "description": "Creamy chocolate shake made with real ice cream."
+    },
+    {
+        "productName": "Mozzarella Cheeseburger",
+        "price": 36000,
+        "imageUrl": "http://localhost:3000/product12.jpg",
+        "description": "Refreshing smoothie with a blend of strawberries and bananas."
+    },
+    {
+        "productName": "Royal Chicken Burger",
+        "price": 31000,
+        "imageUrl": "http://localhost:3000/product13.jpg",
+        "description": "Classic Coca-Cola served in a regular size."
+    },
+    {
+        "productName": "Cheeseburger",
+        "price": 26000,
+        "imageUrl": "http://localhost:3000/product14.jpg",
+        "description": "A healthy salad with grilled chicken and a variety of fresh vegetables."
+    }
+]
