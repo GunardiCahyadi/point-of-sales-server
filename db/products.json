@@ -2,85 +2,85 @@
     {
         "productName": "King Box Cheeseburger",
         "price": 50000,
-        "imageUrl": "http://localhost:3000/product1.jpg",
+        "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947435/product2_qihgh6.png",
         "description": "The iconic flame-grilled beef burger with tomatoes, lettuce, onions, and pickles."
     },
     {
         "productName": "King Box Double Cheeseburger Regular",
         "price": 60000,
-        "imageUrl": "http://localhost:3000/product2.jpg",
+        "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947435/product6_hx9cab.png",
         "description": "A juicy chicken fillet served on a soft bun with mayo and lettuce."
     },
     {
         "productName": "King Box Mozzarella Cheeseburger Regular",
         "price": 61000,
-        "imageUrl": "http://localhost:3000/product3.jpg",
+        "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947435/product1_rghcpb.png",
         "description": "A classic cheeseburger with a melted cheese slice, onions, and pickles."
     },
     {
         "productName": "King Deals Box Cheeseburger Supreme Regular",
         "price": 56000,
-        "imageUrl": "http://localhost:3000/product4.jpg",
+        "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947435/product3_ariizx.png",
         "description": "Golden crispy fries, perfect as a side or snack."
     },
     {
         "productName": "King Box Royal Chicken Regular",
         "price": 56000,
-        "imageUrl": "http://localhost:3000/product5.jpg",
+        "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947435/product4_udcahb.png",
         "description": "Crispy and flavorful onion rings."
     },
     {
         "productName": "Paket Cheeseburger Regular",
         "price": 39000,
-        "imageUrl": "http://localhost:3000/product6.jpg",
+        "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947435/product5_fh3gq4.png",
         "description": "A delicious plant-based burger patty with fresh vegetables."
     },
     {
         "productName": "Paket Double Cheeseburger Regular",
         "price": 49000,
-        "imageUrl": "http://localhost:3000/product7.jpg",
+        "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947436/product10_mdtswq.png",
         "description": "A massive burger with BBQ sauce, bacon, and cheese."
     },
     {
         "productName": "Paket Mozzarella Cheeseburger Regular",
         "price": 50000,
-        "imageUrl": "http://localhost:3000/product8.jpg",
+        "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947437/product12_rzsohh.png",
         "description": "Four crispy and tender chicken strips with your choice of dipping sauce."
     },
     {
         "productName": "Paket Cheeseburger Supreme Regular",
         "price": 45000,
-        "imageUrl": "http://localhost:3000/product9.jpg",
+        "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947437/product8_horwon.png",
         "description": "A savory fish fillet topped with tartar sauce and lettuce."
     },
     {
         "productName": "Paket Chicken Royal Burger Regular",
         "price": 45000,
-        "imageUrl": "http://localhost:3000/product10.jpg",
+        "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947437/product11_d2j0bl.png",
         "description": "A Whopper topped with crispy bacon and melted cheese."
     },
     {
         "productName": "Double Cheeseburger",
         "price": 35000,
-        "imageUrl": "http://localhost:3000/product11.jpg",
+        "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947438/product7_oiy2cu.png",
         "description": "Creamy chocolate shake made with real ice cream."
     },
     {
         "productName": "Mozzarella Cheeseburger",
         "price": 36000,
-        "imageUrl": "http://localhost:3000/product12.jpg",
+        "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947438/product14_a3axbk.png",
         "description": "Refreshing smoothie with a blend of strawberries and bananas."
     },
     {
         "productName": "Royal Chicken Burger",
         "price": 31000,
-        "imageUrl": "http://localhost:3000/product13.jpg",
+        "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947438/product13_ddsoi7.png",
         "description": "Classic Coca-Cola served in a regular size."
     },
     {
         "productName": "Cheeseburger",
         "price": 26000,
-        "imageUrl": "http://localhost:3000/product14.jpg",
+        "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947438/product13_ddsoi7.png",
         "description": "A healthy salad with grilled chicken and a variety of fresh vegetables."
     }
 ]

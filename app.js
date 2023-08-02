@@ -12,11 +12,12 @@ require("dotenv").config();
 
 app.use(express.static("public"));
 
+app.post("/tables", Controller.findTable);
 app.get("/products", Controller.listProduct);
+app.get("/orders/:orderId", Controller.listOrder);
+app.post("/orderdetails", Controller.handleOrderDetails);
 
 app.post("/orders/:tableId", Controller.handleOrder); //
-
-app.post("/orderdetails/:productId", Controller.handleOrderDetails);
 
 app.post("/generate-midtrans-token/:productId", Controller.midtrans);
 
