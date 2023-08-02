@@ -21,6 +21,6 @@ app.get("/orders/:orderId", Controller.getOrder);
 app.post("/generate-midtrans-token/:orderId", Controller.midtrans);
 app.patch("/payments/:orderId", Controller.payment);
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Example app listening on port ${PORT}`);
 });
