@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 const Controller = require("./controllers/controller");
 const cors = require("cors");
 // const public = require("./public");
