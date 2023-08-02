@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+require("dotenv").config();
 const PORT = process.env.PORT || 3000;
 const Controller = require("./controllers/controller");
 const cors = require("cors");
@@ -8,7 +9,6 @@ const cors = require("cors");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
-require("dotenv").config();
 
 app.use(express.static("public"));
 
