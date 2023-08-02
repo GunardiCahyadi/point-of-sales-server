@@ -65,6 +65,9 @@ module.exports = (sequelize, DataTypes) => {
           },
         },
       },
+      transactionId: {
+        type: DataTypes.TEXT,
+      },
     },
     {
       sequelize,
