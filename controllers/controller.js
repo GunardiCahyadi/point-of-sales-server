@@ -56,7 +56,7 @@ class Controller {
       // const tableId = localStorage.getItem("tableId");
 
       // const base_url = `https://pos-bk.web.app?orderId=${orderId}&tableId=${tableId}`;
-      const base_url = "https://pos-bk.web.app";
+      const base_url = "https://pos-bk.gunardicahyadi.com";
       // const base_url = `http://localhost:3000`;
 
       const qrCode = await axios.post(
