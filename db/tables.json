@@ -1,0 +1,26 @@
+[
+    {
+        "tableNo" : 1,
+        "pax": 2
+    },
+    {
+        "tableNo" : 2,
+        "pax": 2
+    },
+    {
+        "tableNo" : 3,
+        "pax": 4
+    },
+    {
+        "tableNo" : 4,
+        "pax": 4
+    },
+    {
+        "tableNo" : 5,
+        "pax": 6
+    },
+    {
+        "tableNo" : 6,
+        "pax": 6
+    }
+]
