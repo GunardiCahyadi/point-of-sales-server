@@ -52,18 +52,23 @@ class Controller {
         offset,
       });
 
-      const base_url = `https://pos-bk.web.app`;
+      // const orderId = localStorage.getItem("orderId");
+      // const tableId = localStorage.getItem("tableId");
+
+      // const base_url = `https://pos-bk.web.app?orderId=${orderId}&tableId=${tableId}`;
+      const base_url = "https://pos-bk.web.app";
       // const base_url = `http://localhost:3000`;
 
       const qrCode = await axios.post(
         "https://api.qr-code-generator.com/v1/create?access-token=sJXRC6Kycf-E6flwZ3aRPcJKK8POHp00W5On3TIvACNrqn7F7jLbCcoPppslWm7E",
         {
           frame_name: "no-frame",
-          qr_code_text: base_url + `/home`,
+          qr_code_text: base_url + "/home",
           image_format: "SVG",
           qr_code_logo: "scan-me-square",
         }
       );
+
       // console.log(qrCode);
 
       res.status(200).json({
