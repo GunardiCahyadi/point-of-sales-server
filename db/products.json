@@ -1,5 +1,125 @@
 [
     {
+        "productName": "Cheeseburger",
+        "price": 26000,
+        "imageUrl": "https://i.pinimg.com/474x/27/d5/23/27d523af3f6d343a789bf70c1f76e2f7.jpg",
+        "description": "A delicious cheeseburger with melted cheese and juicy beef patty."
+      },
+      {
+        "productName": "Double Cheeseburger",
+        "price": 32000,
+        "imageUrl": "https://i.pinimg.com/474x/7e/9b/81/7e9b81180613a52a4b41c3a4e709cc88.jpg",
+        "description": "A mouth-watering double cheeseburger with two beef patties and extra cheese."
+      },
+      {
+        "productName": "Bacon Burger",
+        "price": 28000,
+        "imageUrl": "https://i.pinimg.com/474x/81/74/5a/81745a7b3dd0651cdef3ddc3f7c79d02.jpg",
+        "description": "A delightful bacon burger topped with crispy bacon strips and fresh veggies."
+      },
+      {
+        "productName": "Veggie Burger",
+        "price": 24000,
+        "imageUrl": "https://i.pinimg.com/474x/fe/8a/82/fe8a821d11269ba7e8ded9432331cd35.jpg",
+        "description": "A healthy and tasty veggie burger with plant-based patties and nutritious greens."
+      },
+      {
+        "productName": "Mushroom Swiss Burger",
+        "price": 29000,
+        "imageUrl": "https://i.pinimg.com/474x/c8/4d/1e/c84d1e202914a5b04b648c9f528d27b9.jpg",
+        "description": "A delightful burger with sautéed mushrooms and Swiss cheese."
+      },
+      {
+        "productName": "BBQ Bacon Burger",
+        "price": 31000,
+        "imageUrl": "https://i.pinimg.com/474x/52/55/58/5255588753ea59eb28fff4c71087f5cc.jpg",
+        "description": "A lip-smacking BBQ bacon burger with tangy barbecue sauce and crispy bacon."
+      },
+      {
+        "productName": "Chicken Burger",
+        "price": 25000,
+        "imageUrl": "https://i.pinimg.com/474x/60/cb/f4/60cbf4196e872606c08dc9c11984825e.jpg",
+        "description": "A delicious grilled chicken burger with fresh veggies and creamy mayo."
+      },
+      {
+        "productName": "Turkey Burger",
+        "price": 27000,
+        "imageUrl": "https://i.pinimg.com/474x/9a/24/56/9a245620b424e8d9efa7173ce871768a.jpg",
+        "description": "A flavorful turkey burger with lettuce, tomato, and cranberry sauce."
+      },
+      {
+        "productName": "Teriyaki Burger",
+        "price": 30000,
+        "imageUrl": "https://i.pinimg.com/474x/fd/da/aa/fddaaa50015f37336f0d53170a3d2983.jpg",
+        "description": "A mouthwatering teriyaki burger with grilled pineapple and teriyaki sauce."
+      },
+      {
+        "productName": "Black Bean Burger",
+        "price": 23000,
+        "imageUrl": "https://i.pinimg.com/474x/99/86/a4/9986a43722df0c68d311d685910f79ca.jpg",
+        "description": "A scrumptious black bean burger with avocado and cilantro dressing."
+      },
+      {
+        "productName": "Bison Burger",
+        "price": 34000,
+        "imageUrl": "https://i.pinimg.com/474x/a6/85/a3/a685a334f68ced9455e50363ee25b9dd.jpg",
+        "description": "A lean and flavorful bison burger with caramelized onions and blue cheese."
+      },
+      {
+        "productName": "Portobello Burger",
+        "price": 29000,
+        "imageUrl": "https://i.pinimg.com/474x/38/58/1e/38581ec2c09658c51f9d5a2ab0ead93c.jpg",
+        "description": "A savory portobello mushroom burger with melted mozzarella and pesto sauce."
+      },
+      {
+        "productName": "Western Burger",
+        "price": 31000,
+        "imageUrl": "https://i.pinimg.com/474x/75/9c/d9/759cd9580ccec2396b452f76a5f4775d.jpg",
+        "description": "A delicious western burger with onion rings and barbecue sauce."
+      },
+      {
+        "productName": "Guacamole Burger",
+        "price": 30000,
+        "imageUrl": "https://i.pinimg.com/474x/3d/e9/ac/3de9ac96b8000c3803b7315f8052d5a7.jpg",
+        "description": "A mouthwatering burger topped with creamy guacamole and pico de gallo."
+      },
+      {
+        "productName": "Salmon Burger",
+        "price": 32000,
+        "imageUrl": "https://i.pinimg.com/474x/22/bf/53/22bf53269de691e6e5646e4d360dffbb.jpg",
+        "description": "A healthy and flavorful salmon burger with lemon-dill sauce."
+      },
+      {
+        "productName": "Pulled Pork Burger",
+        "price": 32000,
+        "imageUrl": "https://i.pinimg.com/474x/98/44/c3/9844c3fec6234813823eab0034579945.jpg",
+        "description": "A mouthwatering pulled pork burger with coleslaw and barbecue sauce."
+      },
+      {
+        "productName": "Avocado Turkey Burger",
+        "price": 31000,
+        "imageUrl": "https://i.pinimg.com/474x/d5/0e/03/d50e0323812d25ceb76dbedbe57df060.jpg",
+        "description": "A delightful turkey burger topped with avocado slices and arugula."
+      },
+      {
+        "productName": "Hawaiian Burger",
+        "price": 31000,
+        "imageUrl": "https://i.pinimg.com/474x/a6/78/f5/a678f510f9334be1c27919ec48f3f0d1.jpg",
+        "description": "A tropical Hawaiian burger with grilled pineapple and teriyaki sauce."
+      },
+      {
+        "productName": "Buffalo Chicken Burger",
+        "price": 29000,
+        "imageUrl": "https://i.pinimg.com/474x/37/14/3b/37143b10df3ca039091c96b7bf76a6aa.jpg",
+        "description": "A spicy buffalo chicken burger with blue cheese dressing."
+      },
+      {
+        "productName": "Italian Burger",
+        "price": 30000,
+        "imageUrl": "https://i.pinimg.com/474x/02/a7/ae/02a7aea7e0c9c406192cf7aba12ea377.jpg",
+        "description": "A flavorful Italian burger with mozzarella, basil, and tomato."
+      },
+    {
         "productName": "King Box Cheeseburger",
         "price": 50000,
         "imageUrl": "https://res.cloudinary.com/dipqhigvw/image/upload/v1690947435/product2_qihgh6.png",

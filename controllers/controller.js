@@ -40,7 +40,18 @@ class Controller {
   }
   static async listProduct(req, res) {
     try {
-      const product = await Product.findAll();
+      const size = 6;
+      const { page, title } = req.query;
+      const condition = title ? { title: { [Op.iLike]: `%${title}%` } } : null;
+
+      const { limit, offset } = getPagination(page, size);
+
+      const product = await Product.findAndCountAll({
+        where: condition,
+        limit,
+        offset,
+      });
+
       const base_url = "http://localhost:3000";
 
       const qrCode = await axios.post(
@@ -52,13 +63,20 @@ class Controller {
           qr_code_logo: "scan-me-square",
         }
       );
+      // console.log(qrCode);
 
       res.status(200).json({
+        limitData: limit,
+        Offset: offset,
+        totalPage: Math.ceil(product.count / limit),
         data: product,
         qrCode: qrCode.data,
       });
     } catch (err) {
       console.log(err);
+      res.status(500).json({
+        message: "Internal server error",
+      });
     }
   }
   static async listOrderDetail(req, res) {
@@ -77,6 +95,9 @@ class Controller {
       });
     } catch (err) {
       console.log(err);
+      res.status(500).json({
+        message: "Internal server error",
+      });
     }
   }
   static async handleOrderDetails(req, res) {
@@ -148,6 +169,9 @@ class Controller {
       // });
     } catch (err) {
       console.log(err);
+      res.status(500).json({
+        message: "Internal server error",
+      });
     }
   }
   static async handleRemoveCart(req, res) {
@@ -209,6 +233,9 @@ class Controller {
       });
     } catch (err) {
       console.log(err);
+      res.status(500).json({
+        message: "Internal server error",
+      });
     }
   }
   static async handleOrder(req, res) {
@@ -242,6 +269,9 @@ class Controller {
       });
     } catch (err) {
       console.log(err);
+      res.status(500).json({
+        message: "Internal server error",
+      });
     }
   }
   static async midtrans(req, res) {
@@ -303,6 +333,9 @@ class Controller {
       });
     } catch (err) {
       console.log(err);
+      res.status(500).json({
+        message: "Internal server error",
+      });
     }
   }
   static async getOrder(req, res) {
@@ -330,6 +363,9 @@ class Controller {
       });
     } catch (err) {
       console.log(err);
+      res.status(500).json({
+        message: "Internal server error",
+      });
     }
   }
   static async payment(req, res) {
@@ -356,19 +392,11 @@ class Controller {
       });
     } catch (err) {
       console.log(err);
+      res.status(500).json({
+        message: "Internal server error",
+      });
     }
   }
 }
 
 module.exports = Controller;
-
-/**
-
-- find list order detail by orderId (dari localstorage) => harus dibuat
-- kalau ada 2 user pakai websitenya secara bersamaan, gimana caranya kita mengetahui bahwa user tersebut order yang mana ??
-  => jika hanya pakai orderId, lalu gimana caranya website tersebut mengetahui order yang mana ??
-  => masukin ke localstorage orderIdnya, berarti saat midtrans sudah success, harus hapus localstoragenya
-- update order status yang di hit dari midtrans (webhooks). jadi nanti di client kalau sudah success, midtrans akan ngehit webhooks yang kamu buat. 
-  => webhooks maksudnya seperti bikin endpoint untuk dihit sama server lain (midtrans). nanti endpoint tersebut akan mengubah status order id berdasarkan transactionId (token dari midtrans)
-
-*/

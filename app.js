@@ -4,7 +4,6 @@ require("dotenv").config();
 const PORT = process.env.PORT || 3000;
 const Controller = require("./controllers/controller");
 const cors = require("cors");
-// const public = require("./public");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
