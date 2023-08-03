@@ -52,8 +52,8 @@ class Controller {
         offset,
       });
 
-      const orderId = localStorage.getItem("orderId");
-      const tableId = localStorage.getItem("tableId");
+      // const orderId = localStorage.getItem("orderId");
+      // const tableId = localStorage.getItem("tableId");
 
       // const base_url = `https://pos-bk.web.app?orderId=${orderId}&tableId=${tableId}`;
       const base_url = `https://pos-bk.web.app`;
@@ -63,8 +63,7 @@ class Controller {
         "https://api.qr-code-generator.com/v1/create?access-token=sJXRC6Kycf-E6flwZ3aRPcJKK8POHp00W5On3TIvACNrqn7F7jLbCcoPppslWm7E",
         {
           frame_name: "no-frame",
-          qr_code_text:
-            base_url + `/home?orderId=${orderId}&tableId=${tableId}`,
+          qr_code_text: base_url + `/`,
           image_format: "SVG",
           qr_code_logo: "scan-me-square",
         }
