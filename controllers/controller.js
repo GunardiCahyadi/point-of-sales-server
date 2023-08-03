@@ -52,17 +52,19 @@ class Controller {
         offset,
       });
 
-      // const orderId = localStorage.getItem("orderId");
-      // const tableId = localStorage.getItem("tableId");
+      const orderId = localStorage.getItem("orderId");
+      const tableId = localStorage.getItem("tableId");
 
       // const base_url = `https://pos-bk.web.app?orderId=${orderId}&tableId=${tableId}`;
       const base_url = `https://pos-bk.web.app`;
+      // const base_url = `http://localhost:3000`;
 
       const qrCode = await axios.post(
         "https://api.qr-code-generator.com/v1/create?access-token=sJXRC6Kycf-E6flwZ3aRPcJKK8POHp00W5On3TIvACNrqn7F7jLbCcoPppslWm7E",
         {
           frame_name: "no-frame",
-          qr_code_text: base_url + "/home",
+          qr_code_text:
+            base_url + `/home?orderId=${orderId}&tableId=${tableId}`,
           image_format: "SVG",
           qr_code_logo: "scan-me-square",
         }
@@ -289,13 +291,14 @@ class Controller {
       const { orderId: orderId } = req.params; // harusnya order id
       // console.log(orderId, "<<< order id");
       const order = await Order.findByPk(orderId);
-      // console.log(order.dataValues.id, "<<<<<<<ini order id");
+      console.log(order, "<<< ini order");
+      console.log(order.dataValues.id, "<<<<<<<ini order id");
       const orderdetail = await OrderDetail.findAll({
         where: {
           OrderId: order.dataValues.id,
         },
       }); // harus findAll
-      console.log(orderdetail, "<<<< ini order detail");
+      // console.log(orderdetail, "<<<< ini order detail");
 
       let amount = 0;
       orderdetail.forEach((el) => {
@@ -304,7 +307,7 @@ class Controller {
       console.log(amount, "<<< ini amout");
       let parameter = {
         transaction_details: {
-          order_id: order.id,
+          order_id: order.id + Math.ceil(Math.random() * 9999999),
           gross_amount: amount, // price nya calculate dari price *  quantity
         },
         credit_card: {
